@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Get Involved — Hope for Rwenzori Foundation</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Montserrat:wght@300;400;500;600;700&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ─── NAV ──────────────────────────────────────────── -->
+  <nav id="mainNav">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon"><img src="assets/logo.jpeg" alt="Hope for Rwenzori Foundation Logo"></div>
+      <div class="nav-logo-text">
+        Hope for Rwenzori
+        <span>Foundation</span>
+      </div>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Programs</a></li>
+      <li><a href="getinvolved.html" class="active">Get Involved</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="getinvolved.html#donate" class="nav-donate-btn">Donate</a></li>
+    </ul>
+
+    <div class="nav-hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- ─── PAGE HERO ───────────────────────────────────── -->
+  <section class="page-hero">
+    <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1593113598332-cd288d649433?w=1920&q=85')"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-overlay-pattern"></div>
+
+    <div class="hero-content">
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a>
+        <span class="sep">/</span>
+        <span>Get Involved</span>
+      </div>
+      <h1 class="hero-headline">Be the <em>Change</em></h1>
+      <p class="hero-tagline">
+        Donate, volunteer, fundraise, or partner with us. Every action you take ripples across the Rwenzori highlands.
+      </p>
+    </div>
+  </section>
+
+  <!-- ─── WAYS TO HELP ─────────────────────────────────── -->
+  <section class="section-pad" style="background: var(--white);">
+    <div class="max-container">
+      <div class="reveal" style="text-align:center; max-width: 640px; margin: 0 auto 60px;">
+        <div class="section-label" style="justify-content:center;">Ways to Help</div>
+        <h2 class="section-headline" style="margin-bottom:16px;">Four ways to <em>make a difference</em></h2>
+        <p style="color: var(--text-muted); font-weight: 300; font-size: 1.05rem; line-height:1.75;">
+          Whether you give money, time, skills, or voice — there's a place for you in this movement.
+        </p>
+      </div>
+
+      <div class="getinvolved-grid">
+        <div class="involve-card donate-card reveal">
+          <h3 class="involve-title">Make a Donation</h3>
+          <p class="involve-desc">
+            Your donation goes directly to scholarships, clinic supplies, and women's savings groups. 100% transparent tracking on every dollar.
+          </p>
+          <div class="donation-amounts">
+            <button class="donation-pill active" onclick="setActive(this)">$25</button>
+            <button class="donation-pill" onclick="setActive(this)">$50</button>
+            <button class="donation-pill" onclick="setActive(this)">$100</button>
+            <button class="donation-pill" onclick="setActive(this)">$250</button>
+            <button class="donation-pill" onclick="setActive(this)">Custom</button>
+          </div>
+          <a href="#" class="btn-involve-primary">Donate Securely ↗</a>
+        </div>
+
+        <div class="involve-card volunteer-card reveal reveal-delay-2">
+          <h3 class="involve-title">Volunteer With Us</h3>
+          <p class="involve-desc">
+            Teach a class, assist in a clinic, or help with program coordination. We need teachers, medical professionals, and community organizers.
+          </p>
+          <a href="#volunteer" class="btn-involve-outline">Apply to Volunteer →</a>
+        </div>
+      </div>
+
+      <div class="getinvolved-grid" style="margin-top:28px;">
+        <div class="involve-card volunteer-card reveal">
+          <!-- <span class="involve-icon">📢</span> -->
+          <h3 class="involve-title">Fundraise</h3>
+          <p class="involve-desc">
+            Start a birthday campaign, run a marathon, or host an event. We'll provide you with materials, stories, and support to make it a success.
+          </p>
+          <a href="contact.html" class="btn-involve-outline">Start a Campaign →</a>
+        </div>
+
+        <div class="involve-card volunteer-card reveal reveal-delay-2">
+          <!-- <span class="involve-icon">🤲</span> -->
+          <h3 class="involve-title">Partner With Us</h3>
+          <p class="involve-desc">
+            Corporations, schools, and other NGOs can partner with us on specific programs or general operations. Let's create impact together.
+          </p>
+          <a href="contact.html" class="btn-involve-outline">Discuss Partnership →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── DONATION IMPACT ──────────────────────────────── -->
+  <section class="section-pad" id="donate" style="background: var(--cream-dark);">
+    <div class="max-container">
+      <div class="reveal" style="text-align:center; max-width: 640px; margin: 0 auto 60px;">
+        <div class="section-label" style="justify-content:center;">Your Impact</div>
+        <h2 class="section-headline" style="margin-bottom:16px;">What your donation <em>can do</em></h2>
+        <p style="color: var(--text-muted); font-weight: 300; font-size: 1.05rem; line-height:1.75;">
+          Every dollar has a direct, measurable impact on the ground. Here's how your contribution transforms lives.
+        </p>
+      </div>
+
+      <div class="about-values-grid">
+        <div class="value-card reveal">
+          <span class="value-icon" style="font-size:2rem; color:var(--gold); font-weight:700;">$25</span>
+          <h3 class="value-title">School Supplies</h3>
+          <p class="value-desc">Provides books, pencils, and a uniform for one child for a full school year.</p>
+        </div>
+        <div class="value-card reveal reveal-delay-1">
+          <span class="value-icon" style="font-size:2rem; color:var(--gold); font-weight:700;">$50</span>
+          <h3 class="value-title">Health Checkup</h3>
+          <p class="value-desc">Funds a mobile clinic visit to one remote village, serving 20–30 patients.</p>
+        </div>
+        <div class="value-card reveal reveal-delay-2">
+          <span class="value-icon" style="font-size:2rem; color:var(--gold); font-weight:700;">$100</span>
+          <h3 class="value-title">Family Healthcare</h3>
+          <p class="value-desc">Covers essential healthcare for one family for three months, including medication.</p>
+        </div>
+        <div class="value-card reveal">
+          <span class="value-icon" style="font-size:2rem; color:var(--gold); font-weight:700;">$250</span>
+          <h3 class="value-title">Seed Capital</h3>
+          <p class="value-desc">Provides startup capital and training for one woman to launch a small business.</p>
+        </div>
+        <div class="value-card reveal reveal-delay-1">
+          <span class="value-icon" style="font-size:2rem; color:var(--gold); font-weight:700;">$500</span>
+          <h3 class="value-title">Scholarship</h3>
+          <p class="value-desc">Funds a full year of secondary school for one student, including tuition and supplies.</p>
+        </div>
+        <div class="value-card reveal reveal-delay-2">
+          <span class="value-icon" style="font-size:2rem; color:var(--gold); font-weight:700;">$1,000</span>
+          <h3 class="value-title">Classroom Support</h3>
+          <p class="value-desc">Equips a classroom with desks, books, and teaching materials for 40 students.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── VOLUNTEER APPLICATION ──────────────────────────── -->
+  <section class="section-pad" id="volunteer" style="background: var(--white);">
+    <div class="max-container">
+      <div class="contact-grid">
+        <div class="reveal">
+          <div class="section-label">Volunteer</div>
+          <h2 class="section-headline" style="margin-bottom:20px;">Apply to <em>Volunteer</em></h2>
+          <p class="programs-intro-body" style="margin-bottom:24px;">
+            We're always looking for passionate individuals to join our work in the Rwenzori region. Whether you can commit two weeks or six months, your skills can make a real difference.
+          </p>
+
+          <div class="contact-info-item" style="margin-bottom:16px;">
+            <div class="contact-info-icon">
+            <img src="./assets/icons/eduicon.png" alt="icon" style="width: 48px; height: 48px; border-radius: 5px;">
+            </div>
+            <div class="contact-info-content">
+              <h4>Teaching</h4>
+              <p>Primary and secondary subjects, digital literacy, and English language instruction.</p>
+            </div>
+          </div>
+          <div class="contact-info-item" style="margin-bottom:16px;">
+            <div class="contact-info-icon">
+              <img src="./assets/icons/health-icon.jpg" alt="icon" style="width: 48px; height: 48px; border-radius: 5px; ">
+            </div>
+            <div class="contact-info-content">
+              <h4>Healthcare</h4>
+              <p>Nurses, midwives, doctors, and public health specialists for mobile clinic support.</p>
+            </div>
+          </div>
+          <div class="contact-info-item" style="margin-bottom:16px;">
+            <div class="contact-info-icon">
+              <img src="./assets/icons/admin-icon.jpg" alt="icon" style="width: 48px; height: 48px; border-radius: 5px;" />
+            </div>
+            <div class="contact-info-content">
+              <h4>Administration</h4>
+              <p>Grant writing, monitoring & evaluation, communications, and program coordination.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-card reveal reveal-delay-2">
+          <div class="section-label">Apply Now</div>
+          <h3 class="section-headline" style="font-size:1.4rem; margin-bottom:24px;">Tell us about <em>yourself</em></h3>
+          <div style="width:100%;height:500px;" data-fillout-id="4Sm6Dxecmzus" data-fillout-embed-type="standard" data-fillout-inherit-parameters data-fillout-dynamic-resize></div><script src="https://server.fillout.com/embed/v1/"></script>
+          <!-- <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Thank you for your application! We will review and contact you within 5 business days.');">
+            <div class="form-group">
+              <label for="v-name">Full Name</label>
+              <input type="text" id="v-name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="v-email">Email</label>
+              <input type="email" id="v-email" name="email" placeholder="you@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="v-skill">Area of Interest</label>
+              <select id="v-skill" name="skill" required>
+                <option value="" disabled selected>Select an area</option>
+                <option value="teaching">Teaching & Education</option>
+                <option value="health">Healthcare & Medical</option>
+                <option value="agriculture">Agriculture & Livelihoods</option>
+                <option value="admin">Administration & Communications</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="v-duration">Availability</label>
+              <select id="v-duration" name="duration" required>
+                <option value="" disabled selected>Select duration</option>
+                <option value="2weeks">2–4 Weeks</option>
+                <option value="1month">1–3 Months</option>
+                <option value="6months">3–6 Months</option>
+                <option value="1year">6+ Months</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="v-message">Why do you want to volunteer?</label>
+              <textarea id="v-message" name="message" placeholder="Share your motivation and relevant experience" required></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Submit Application →</button>
+          </form> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FAQ ──────────────────────────────────────────── -->
+  <section class="section-pad" style="background: var(--cream-dark);">
+    <div class="max-container">
+      <div class="reveal" style="text-align:center; max-width: 640px; margin: 0 auto 60px;">
+        <div class="section-label" style="justify-content:center;">FAQ</div>
+        <h2 class="section-headline" style="margin-bottom:16px;">Common <em>questions</em></h2>
+        <p style="color: var(--text-muted); font-weight: 300; font-size: 1.05rem; line-height:1.75;">
+          Have questions about donating or volunteering? Here are the answers to the most common ones.
+        </p>
+      </div>
+
+      <div style="max-width: 800px; margin: 0 auto;">
+        <div class="value-card reveal" style="margin-bottom:20px;">
+          <h3 class="value-title">Is my donation tax-deductible?</h3>
+          <p class="value-desc">Yes. Hope for Rwenzori Foundation is a registered NGO in Uganda, and we can provide receipts for tax purposes. If you donate through our international partners, additional tax benefits may apply in your country.</p>
+        </div>
+        <div class="value-card reveal reveal-delay-1" style="margin-bottom:20px;">
+          <h3 class="value-title">What percentage goes to programs?</h3>
+          <p class="value-desc">Over 88% of every donation goes directly to program delivery. The remaining 12% covers essential operational costs like transport, communication, and compliance. We publish full financial reports annually.</p>
+        </div>
+        <div class="value-card reveal reveal-delay-2" style="margin-bottom:20px;">
+          <h3 class="value-title">Do I need experience to volunteer?</h3>
+          <p class="value-desc">Some roles require professional qualifications (medical, teaching), but many do not. We value enthusiasm, cultural sensitivity, and a willingness to learn. All volunteers receive an orientation before starting.</p>
+        </div>
+        <div class="value-card reveal" style="margin-bottom:20px;">
+          <h3 class="value-title">Where will I stay as a volunteer?</h3>
+          <p class="value-desc">We arrange safe, comfortable homestays or guesthouse accommodation in Kasese town. Volunteers are responsible for their own travel to Uganda, but we handle all local logistics once you arrive.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ────────────────────────────────────────── -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo-text">Hope for Rwenzori Foundation</div>
+        <span class="footer-tagline">Transforming Communities</span>
+        <p class="footer-desc">
+          An NGO providing education, health, and economic empowerment to communities in the Rwenzori region of Uganda since 2016.
+        </p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/share/1AjSC8LZxd/" title="Facebook" target="_blank">f</a>
+          <a href="https://x.com/hopeforrwenzori" title="Twitter" target="_blank">𝕏</a>
+          <a href="https://www.instagram.com/hopeforrwenzorifoundation/?utm_source=ig_web_button_share_sheet" title="Instagram" target="_blank">◎</a>
+          <a href="https://www.linkedin.com/in/hope-for-rwenzori-foundation-b09533398?utm_source=share_via&utm_content=profile&utm_medium=member_android" title="LinkedIn" target="_blank">in</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="footer-col-title">Navigate</div>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Programs</a></li>
+          <li><a href="getinvolved.html">Get Involved</a></li>
+          <li><a href="news.html">News & Stories</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="footer-col-title">Programs</div>
+        <ul class="footer-links">
+          <li><a href="services.html#education">Education</a></li>
+          <li><a href="services.html#health">Health</a></li>
+          <li><a href="services.html#economic">Economic Empowerment</a></li>
+          <li><a href="services.html#scholarships">Scholarships</a></li>
+          <li><a href="services.html#clinics">Mobile Clinics</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="footer-col-title">Contact</div>
+        <div class="footer-contact-item">
+          <span class="footer-contact-icon">📍</span>
+          <span class="footer-contact-text">Muhokya Trading Center,<br/>Kasese District, Uganda</span>
+        </div>
+        <div class="footer-contact-item">
+          <span class="footer-contact-icon">📞</span>
+          <span class="footer-contact-text">+256 705 866 259<br/>Mon–Fri, 9am–5pm EAT</span>
+        </div>
+        <div class="footer-contact-item">
+          <span class="footer-contact-icon">✉️</span>
+          <a href="mailto:hopeforrwenzorifoundation@gmail.com" class="footer-contact-text">hopeforrwenzorifoundation@gmail.com</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copy">
+        © 2026 Hope for Rwenzori Foundation. All rights reserved. Registered NGO, Uganda.
+      </p>
+      <p class="footer-copy">
+        Built with 💚 for the people of Rwenzori
+      </p>
+    </div>
+  </footer>
+
+  <a href="getinvolved.html#donate" class="fab-donate">
+    Donate
+  </a>
+
+  <script>
+    const nav = document.getElementById('mainNav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 40);
+    }, { passive: true });
+    nav.classList.toggle('scrolled', window.scrollY > 40);
+
+    const revealObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          revealObs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+
+    function setActive(btn) {
+      btn.closest('.donation-amounts').querySelectorAll('.donation-pill')
+        .forEach(p => p.classList.remove('active'));
+      btn.classList.add('active');
+    }
+
+    document.getElementById('hamburger').addEventListener('click', () => {
+      const links = document.querySelector('.nav-links');
+      if (links.style.display === 'flex') {
+        links.style.display = 'none';
+      } else {
+        links.style.cssText = `
+          display:flex; flex-direction:column; position:absolute;
+          top:72px; left:0; right:0; padding:24px 6vw 32px;
+          background:rgba(15,42,6,0.95); backdrop-filter:blur(20px);
+          gap:20px; list-style:none;
+        `;
+      }
+    });
+  </script>
+</body>
+</html>
