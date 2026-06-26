@@ -1,1 +1,0 @@
-//Strategy pattern for all payment methods
